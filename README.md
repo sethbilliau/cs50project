@@ -1,2 +1,2 @@
-# cs50project
+# CS50project
 CS50 Project :)
