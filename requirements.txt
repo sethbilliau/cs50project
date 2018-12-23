@@ -2,7 +2,3 @@ cs50
 Flask
 Flask-Session
 requests
-werkzeug.exceptions
-werkzeug.security
-werkzeug.utils
-werkzeug.tempfile
