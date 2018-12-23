@@ -7,7 +7,7 @@ from tempfile import mkdtemp
 from werkzeug.exceptions import default_exceptions
 from werkzeug.security import check_password_hash, generate_password_hash
 from werkzeug.utils import secure_filename
-import math
+from math import floor
 
 from helpers import apology, login_required
 
@@ -159,7 +159,7 @@ def manual():
             share = grandtotal / count * 100
 
             # Round each person's share down so as not to display fractions of cents
-            share = math.floor(share) / 100
+            share = floor(share) / 100
 
             # Correct for the rounding by adding a 0.01 to each person starting with person 1 until sum of shares equals grandtotal
             extra = 0
@@ -229,7 +229,7 @@ def manual():
 
             # Round each entry in totals down so as not to display partial cents
             for i in range(count):
-                totals[i] = round((math.floor(totals[i]*100) / 100), 2)
+                totals[i] = round((floor(totals[i]*100) / 100), 2)
 
             # Sum all entries in totals
             for i in range(count):
