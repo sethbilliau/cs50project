@@ -1,0 +1,9 @@
+cs50
+Flask
+Flask-Session
+requests
+math
+werkzeug.exceptions
+werkzeug.security
+werkzeug.utils
+werkzeug.tempfile
